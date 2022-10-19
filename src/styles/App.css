@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to left top, #eeb9b9, #edbcc9, #e8c0d8, #dfc6e5, #d3ccee, #cbd2f3, #c3d8f6, #bdddf7, #bae3f7, #b9e9f6, #bceef3, #c1f2ef);
+}
+
+.formContainer {
+  height: 700px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstForm {
+  text-align: center;
+}
+
+.formInput {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+input {
+  border: solid 2px lightgray;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+span {
+  display: none;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  bottom: 20px;
+  font-size: 12px;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background-color: #C4D5F4;
+  border-radius: 20px;
+  border: solid 2px lightgray;
+  color: #333333;
+}
+
+button:hover {
+  background-color: white;
+}
+
+input:invalid[unfocused="true"]~span {
+  display: block;
+}
+
+.searchContainer {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.searchInner {
+  margin-top: 60px;
+  width: 80%;
+}
+
+.searchInner span {
+  top:150px;
+}
+
+.dropdown {
+  width: 75%;
+  position: absolute;
+  height: 300px;
+  overflow: auto;
+  top: 150px;
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.dropdown li:hover {
+  color:#EEB9B9;
+  cursor: pointer;
+}
+
+.buttonContainer {
+display: flex;
+gap: 40px;
+margin-bottom: 100px;
+}
+
+.formConfirm {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.success {
+  text-align: center;
+}
+.success h1 {
+  margin-bottom: 30px;
+  color: #333333;
+}
